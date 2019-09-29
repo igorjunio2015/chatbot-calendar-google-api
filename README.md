@@ -1,1 +1,3 @@
-# chatbot-calendar-google-api
+# Chatbot Config Calendar API
+
+Version 1.0
