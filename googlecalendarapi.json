@@ -1,1 +1,2526 @@
-{"onboarding":{"$contentActions":[{"input":{"bypass":false,"$cardContent":{"document":{"id":"7c8e49d8-8272-456c-8bde-24308034a8a0","type":"text/plain"},"editable":false,"deletable":false,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"welcome","conditions":[{"source":"input","comparison":"matches","values":[".*"]}],"$connId":"con_3","$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"onboarding","root":true,"$position":{"top":"133px","left":"1032px"},"$title":"Início","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"fallback":{"$contentActions":[{"input":{"bypass":true,"$cardContent":{"document":{"id":"844844cd-f6a3-4065-ab4a-2aae1ec4b7ce","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false,"$$hashKey":"object:13460"}],"$conditionOutputs":[{"stateId":"error","conditions":[{"source":"input","comparison":"matches","values":[".*"],"$$hashKey":"object:13505"}],"$connId":"con_8","$invalid":false,"$$hashKey":"object:13486"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"onboarding","$invalid":false},"id":"fallback","$position":{"top":"166px","left":"1424px"},"$title":"Exceções","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"welcome":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"8567f8b6-60f7-42cd-b954-519e1c601224","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"8567f8b6-60f7-42cd-b954-519e1c601224","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:6646"},{"action":{"type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000001","type":"text/plain","content":"Olá! {{contact.name}}!\nSeja bem-vindo(a)!"},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000001","type":"text/plain","content":"Olá! {{contact.name}}!\nSeja bem-vindo(a)!"},"editable":true,"deletable":true,"position":"left","editing":false}},"$$hashKey":"object:2559","$invalid":false},{"action":{"type":"SendMessage","settings":{"id":"c5d0d2fa-412b-40cb-9f72-b803d82caeb7","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"c5d0d2fa-412b-40cb-9f72-b803d82caeb7","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:22161"},{"action":{"type":"SendMessage","settings":{"id":"f9f6b4c4-15d5-42b1-bd5e-03b69b00e580","type":"text/plain","content":"1 - Agendamento de consulta\n2 - Verificar consulta\n3 - Desmarcar consulta"},"$cardContent":{"document":{"id":"f9f6b4c4-15d5-42b1-bd5e-03b69b00e580","type":"text/plain","content":"1 - Agendamento de consulta\n2 - Verificar consulta\n3 - Desmarcar consulta"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:22162"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"be51ea56-c5d4-4255-8741-140c24dfb7a2","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:2560","$invalid":false}],"$conditionOutputs":[{"stateId":"3cf2a131-ba34-48e4-b33c-3774a58ca75e","$connId":"con_13","conditions":[{"source":"input","comparison":"equals","values":["1"],"$$hashKey":"object:7902"}],"$$hashKey":"object:7883","$invalid":false},{"stateId":"bd9dfce5-10f7-4d6a-ac7b-4c477bcd76c6","$connId":"con_18","conditions":[{"source":"input","comparison":"equals","values":["2"],"$$hashKey":"object:22668"}],"$invalid":false,"$$hashKey":"object:22660"},{"stateId":"49b5b47e-b19f-454a-b858-25cc5fb52319","$connId":"con_23","conditions":[{"source":"input","comparison":"equals","values":["3"],"$$hashKey":"object:76455"}],"$invalid":false,"$$hashKey":"object:76447"}],"$enteringCustomActions":[{"type":"ProcessHttp","$title":"OAuth","$invalid":true,"settings":{"headers":{},"method":"POST","body":"","uri":"https://accounts.google.com/o/oauth2/token","responseBodyVariable":"oauth"},"conditions":[],"$validationError":{}}],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"welcome","$position":{"top":"245px","left":"1032px"},"$title":"Boas vindas","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":true,"$invalid":true,"$validationError":{}},"error":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"fca8d708-9acf-4a1c-9926-c988d8ac327b","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"fca8d708-9acf-4a1c-9926-c988d8ac327b","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:39800"},{"action":{"type":"SendMessage","settings":{"id":"d0e8b981-d96e-43e3-9505-395be30917e4","type":"text/plain","content":"Não entendi"},"$cardContent":{"document":{"id":"d0e8b981-d96e-43e3-9505-395be30917e4","type":"text/plain","content":"Não entendi"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:39801"},{"input":{"bypass":true,"$cardContent":{"document":{"id":"5c589021-057f-4c0d-9d60-f086feb9010b","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:1428","$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"onboarding","$invalid":false},"id":"error","$position":{"top":"166px","left":"1659px"},"$title":"Erro padrão","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"eec00552-fc6d-4ca8-80a8-411513022638":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"a9ab9b48-ecac-421a-b905-93ed89e73311","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"a9ab9b48-ecac-421a-b905-93ed89e73311","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:1363"},{"action":{"type":"SendMessage","settings":{"id":"2e455d36-6519-40f6-b6c8-c149e3a0aef2","type":"text/plain","content":"{{respEvent@status}}\n{{respEvent@summary}}\n{{respEvent@description}}\n{{respEvent@location}}\n{{respEvent@start}}\n{{respEvent@htmlLink}}"},"$cardContent":{"document":{"id":"2e455d36-6519-40f6-b6c8-c149e3a0aef2","type":"text/plain","content":"{{respEvent@status}}\n{{respEvent@summary}}\n{{respEvent@description}}\n{{respEvent@location}}\n{{respEvent@start}}\n{{respEvent@htmlLink}}"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:1364"},{"input":{"bypass":true,"$cardContent":{"document":{"id":"894969dc-11d0-4625-be3b-635f3db99134","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:1044","$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[{"type":"ProcessHttp","$title":"getEvents","$invalid":false,"settings":{"headers":{"Authorization":"Bearer {{oauth@access_token}}"},"method":"GET","uri":"https://www.googleapis.com/calendar/v3/calendars/{{config.agendaLab}}/events/{{idConsulta}}","responseBodyVariable":"respEvent"},"conditions":[]}],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"eec00552-fc6d-4ca8-80a8-411513022638","root":false,"$title":"2.1 - Buscar Agendamento","$position":{"top":"460px","left":"1032px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"7488f1d8-8427-46c9-a19d-c7171bcc4809":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"50162d02-f402-4c73-bd9e-7052e3f2abb9","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"50162d02-f402-4c73-bd9e-7052e3f2abb9","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:47799"},{"action":{"type":"SendMessage","settings":{"id":"82c23c30-b39a-4796-9a96-1e47d96955aa","type":"text/plain","content":"Deseja gravar a consulta?\nAssunto: {{nomeEvent}}\nDescrição: {{description}}\nData: {{dateEvent}} H {{horaUser}}\n1 - *SIM*\n2 - NÃO"},"$cardContent":{"document":{"id":"82c23c30-b39a-4796-9a96-1e47d96955aa","type":"text/plain","content":"Deseja gravar a consulta?\nAssunto: {{nomeEvent}}\nDescrição: {{description}}\nData: {{dateEvent}} H {{horaUser}}\n1 - *SIM*\n2 - NÃO"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:47800"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"b9005014-2c70-4e42-a904-397fd43a8a85","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:21415","$invalid":false}],"$conditionOutputs":[{"stateId":"b000ac9f-27a3-4df5-b0ea-81ee15b0da4d","$connId":"con_28","conditions":[{"source":"input","comparison":"equals","values":["1","sim"],"$$hashKey":"object:50126"}],"$invalid":false,"$$hashKey":"object:50117"},{"stateId":"51732230-532e-429e-b118-f8096ec5d27b","$connId":"con_33","conditions":[{"source":"input","comparison":"equals","values":["nao","2","não"],"$$hashKey":"object:50172"}],"$invalid":false,"$$hashKey":"object:50164"}],"$enteringCustomActions":[],"$leavingCustomActions":[{"type":"ExecuteScript","$title":"FormatarData","$invalid":false,"settings":{"function":"run","source":"function run(inputVariable1, inputVariable2) {\n\n    var date = inputVariable1;\n    var newdate = date.split(\"/\").reverse().join(\"-\");\n    return newdate;\n    \n}","inputVariables":["dateEvent"],"outputVariable":"dateEventFormated"},"conditions":[{"$$hashKey":"object:57773","source":"input","comparison":"equals","values":["1","sim"]}]},{"type":"ExecuteScript","$title":"HoraFinalConsulta","$invalid":false,"settings":{"function":"run","source":"function run(inputVariable1, inputVariable2) {\n\n    var inputSplit = [inputVariable1.split(\":\")]\n    var hora = (inputSplit[0][0] * 1) + 1;\n\n    if (hora < 10) {\n        hora = \"0\" + hora;\n    }\n\n    var newHora = hora + \":\" + inputSplit[0][1];\n\n    if (newHora > '23:59') {\n        newHora = '23:59'\n    }\n\n    return newHora;\n}","inputVariables":["horaUser"],"outputVariable":"horaUserEnd"},"conditions":[{"$$hashKey":"object:53629","source":"input","comparison":"equals","values":["1","sim"]}]},{"type":"ProcessHttp","$title":"GravarEvento","$invalid":false,"settings":{"headers":{"Authorization":"Bearer {{oauth@access_token}}"},"method":"POST","body":"{\n    \"summary\": \"{{nomeEvent}}\",\n    \"location\": \"Laboratório Sul\",\n    \"description\": \"{{description}}\",\n    \"start\": {\n        \"dateTime\": \"{{dateEventFormated}}T{{horaUser}}:00-03:00\",\n        \"timeZone\": \"America/Sao_Paulo\"\n    },\n    \"attendees\": [\n        {\n            \"email\": \"{{emailUser}}\"\n        }\n    ],\n    \"end\": {\n        \"dateTime\": \"{{dateEventFormated}}T{{horaUserEnd}}:00-03:00\",\n        \"timeZone\": \"America/Sao_Paulo\"\n    }\n}","uri":"https://www.googleapis.com/calendar/v3/calendars/{{config.agendaLab}}/events?sendUpdates=all","responseBodyVariable":"respInputEvent"},"conditions":[{"$$hashKey":"object:47953","source":"input","comparison":"equals","values":["1","SIM"]}]}],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"7488f1d8-8427-46c9-a19d-c7171bcc4809","root":false,"$title":"1.5 - Guardar Evento","$position":{"top":"728px","left":"1036px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"87fa8c8d-2b01-4968-9d58-a5856b394d73":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"8e5d1dfb-400f-4528-816c-e244b3a0b07e","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"8e5d1dfb-400f-4528-816c-e244b3a0b07e","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:26889"},{"action":{"type":"SendMessage","settings":{"id":"12216010-ee71-44ae-8519-2ad7268cf1d6","type":"text/plain","content":"Agora informe o dia:\n(ex.: 31/12/2018)"},"$cardContent":{"document":{"id":"12216010-ee71-44ae-8519-2ad7268cf1d6","type":"text/plain","content":"Agora informe o dia:\n(ex.: 31/12/2018)"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:26890"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"06defaae-ec24-4096-9ec7-6cdac2c85a72","type":"text/plain","textContent":"Entrada do usuário","content":"dateEvent"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"dateEvent","validation":{"rule":"regex","error":"Informe uma data valida","regex":"^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$"}},"$invalid":false,"$$hashKey":"object:26573"},{"action":{"type":"SendMessage","settings":{"id":"83a603f9-3178-4976-a200-8d940b72d115","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000},"metadata":{"#stateName":"{{state.name}}","#stateId":"{{state.id}}","#messageId":"{{input.message@id}}"}},"$cardContent":{"document":{"id":"83a603f9-3178-4976-a200-8d940b72d115","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000},"metadata":{"#stateName":"{{state.name}}","#stateId":"{{state.id}}","#messageId":"{{input.message@id}}"}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:45858"},{"action":{"type":"SendMessage","settings":{"id":"30a28ee9-c6f1-437a-af2e-f50113ec2b98","type":"text/plain","content":"TEST: {{dateEvent}}","metadata":{"#stateName":"{{state.name}}","#stateId":"{{state.id}}","#messageId":"{{input.message@id}}"}},"$cardContent":{"document":{"id":"30a28ee9-c6f1-437a-af2e-f50113ec2b98","type":"text/plain","content":"TEST: {{dateEvent}}"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:45859"}],"$conditionOutputs":[{"stateId":"d72216f0-1861-4c8f-9697-5923a9827898","$connId":"con_38","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:34650"}],"$invalid":false,"$$hashKey":"object:34631"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"87fa8c8d-2b01-4968-9d58-a5856b394d73","root":false,"$title":"1.2 - Solicita Data","$position":{"top":"558.844px","left":"775px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"3cf2a131-ba34-48e4-b33c-3774a58ca75e":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"c548a0e0-569e-4e38-8de0-93a760f30b32","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"c548a0e0-569e-4e38-8de0-93a760f30b32","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:39404"},{"action":{"type":"SendMessage","settings":{"id":"d1d5d70f-b20c-40d8-9585-662128cebeac","type":"text/plain","content":"Vamos agora solicitar algumas informações importantes, se atende as orientações:"},"$cardContent":{"document":{"id":"d1d5d70f-b20c-40d8-9585-662128cebeac","type":"text/plain","content":"Vamos agora solicitar algumas informações importantes, se atende as orientações:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:39405"},{"action":{"type":"SendMessage","settings":{"id":"a0ec434b-c0bb-4199-99e1-991162c09e72","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"a0ec434b-c0bb-4199-99e1-991162c09e72","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:26019"},{"action":{"type":"SendMessage","settings":{"id":"0becfc5f-0523-4bdd-83ef-3b3686f7978f","type":"text/plain","content":"##IMPORTANTE##\nAs informações solicitadas deverá ser enviada em 1 linha apenas"},"$cardContent":{"document":{"id":"0becfc5f-0523-4bdd-83ef-3b3686f7978f","type":"text/plain","content":"##IMPORTANTE##\nAs informações solicitadas deverá ser enviada em 1 linha apenas"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:26494"},{"action":{"type":"SendMessage","settings":{"id":"031d6704-d827-430f-9b53-4d1519150875","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"031d6704-d827-430f-9b53-4d1519150875","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:26493"},{"action":{"type":"SendMessage","settings":{"id":"694dfca1-ce97-41c4-955a-027514c36532","type":"text/plain","content":"Me informe seu nome e o número da sua carteirinha:"},"$cardContent":{"document":{"id":"694dfca1-ce97-41c4-955a-027514c36532","type":"text/plain","content":"Me informe seu nome e o número da sua carteirinha:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:26020"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"08931b1f-9f76-4fbc-9ba0-92f5dd07c894","type":"text/plain","textContent":"Entrada do usuário","content":"nomeEvent"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"nomeEvent","validation":{"rule":"text","error":"Informe seus dados corretos"}},"$$hashKey":"object:25588","$invalid":false}],"$conditionOutputs":[{"stateId":"ba5631b2-a05f-4d1e-97ce-6f9e8ac53646","$connId":"con_43","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:33816"}],"$invalid":false,"$$hashKey":"object:33797"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"3cf2a131-ba34-48e4-b33c-3774a58ca75e","root":false,"$title":"1.0 - Solicita nome","$position":{"top":"368px","left":"775px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"d72216f0-1861-4c8f-9697-5923a9827898":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"6977fbca-46f1-442d-b0aa-8aae2e5330bd","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"6977fbca-46f1-442d-b0aa-8aae2e5330bd","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:27492"},{"action":{"type":"SendMessage","settings":{"id":"8a8cda28-ac4c-44aa-93be-b599d5e205f0","type":"text/plain","content":"E por último me informe a hora:\n(ex.: 16:30)"},"$cardContent":{"document":{"id":"8a8cda28-ac4c-44aa-93be-b599d5e205f0","type":"text/plain","content":"E por último me informe a hora:\n(ex.: 16:30)"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:27493"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"f49068e6-309b-44e7-83bb-9ad22384eaa4","type":"text/plain","textContent":"Entrada do usuário","content":"horaUser"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"horaUser","validation":{"rule":"regex","error":"Informe um horário valido","regex":"^(0[0-9]|1[0-9]|2[0-3]|[0-9]):[0-5][0-9]$"}},"$invalid":false,"$$hashKey":"object:27067"},{"action":{"type":"SendMessage","settings":{"id":"34a57bc7-d4c7-475d-b3b7-765302a03607","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000},"metadata":{"#stateName":"{{state.name}}","#stateId":"{{state.id}}","#messageId":"{{input.message@id}}"}},"$cardContent":{"document":{"id":"34a57bc7-d4c7-475d-b3b7-765302a03607","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000},"metadata":{"#stateName":"{{state.name}}","#stateId":"{{state.id}}","#messageId":"{{input.message@id}}"}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:46254"},{"action":{"type":"SendMessage","settings":{"id":"8a9bbc29-043f-4606-8c06-3f2177be7028","type":"text/plain","content":"TEST: {{horaUser}}","metadata":{"#stateName":"{{state.name}}","#stateId":"{{state.id}}","#messageId":"{{input.message@id}}"}},"$cardContent":{"document":{"id":"8a9bbc29-043f-4606-8c06-3f2177be7028","type":"text/plain","content":"TEST: {{horaUser}}"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:46255"}],"$conditionOutputs":[{"stateId":"80d74a22-fda2-49b9-89a4-3a02aaacfa57","$connId":"con_48","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:52103"}],"$invalid":false,"$$hashKey":"object:52084"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"d72216f0-1861-4c8f-9697-5923a9827898","root":false,"$title":"1.3 - Solicita Horário","$position":{"top":"642.468px","left":"775px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"ba5631b2-a05f-4d1e-97ce-6f9e8ac53646":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"f5fef304-a4a2-4705-ba18-dc87b71ab5f4","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"f5fef304-a4a2-4705-ba18-dc87b71ab5f4","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:43380"},{"action":{"type":"SendMessage","settings":{"id":"07aa99a7-d450-4e31-abd6-56a21952a4c7","type":"text/plain","content":"Agora me informe o assunto desta consulta:"},"$cardContent":{"document":{"id":"07aa99a7-d450-4e31-abd6-56a21952a4c7","type":"text/plain","content":"Agora me informe o assunto desta consulta:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:43381"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"2150d3e8-6a71-47d2-826e-e7685bfe7c92","type":"text/plain","textContent":"Entrada do usuário","content":"description"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"validation":{"rule":"text","error":"Me informe os dados corretamente"},"variable":"description"},"$$hashKey":"object:40965","$invalid":false}],"$conditionOutputs":[{"stateId":"87fa8c8d-2b01-4968-9d58-a5856b394d73","$connId":"con_53","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:42419"}],"$$hashKey":"object:42400","$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"ba5631b2-a05f-4d1e-97ce-6f9e8ac53646","root":false,"$title":"1.1 - Solicita Descrição","$position":{"top":"455.221px","left":"775px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"51732230-532e-429e-b118-f8096ec5d27b":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"f91c4447-89b5-478f-bba1-8c1f741c8680","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"f91c4447-89b5-478f-bba1-8c1f741c8680","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:49701"},{"action":{"type":"SendMessage","settings":{"id":"f354e454-ce3d-494d-95b6-51301a3e4649","type":"text/plain","content":"Qualquer coisa é nos contator novamente então, obrigado!"},"$cardContent":{"document":{"id":"f354e454-ce3d-494d-95b6-51301a3e4649","type":"text/plain","content":"Qualquer coisa é nos contator novamente então, obrigado!"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:49702"},{"input":{"bypass":true,"$cardContent":{"document":{"id":"a4879f3a-ef5d-40f2-8d97-43247f732976","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:49385","$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"51732230-532e-429e-b118-f8096ec5d27b","root":false,"$title":"1.5.2 - Desistência","$position":{"top":"770px","left":"1288.85px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"b000ac9f-27a3-4df5-b0ea-81ee15b0da4d":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"3feef6d8-f576-47b1-bebc-f83b02ed9aaa","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"3feef6d8-f576-47b1-bebc-f83b02ed9aaa","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:48387"},{"action":{"type":"SendMessage","settings":{"id":"c4493c47-1483-4016-ac06-f8d286478b5a","type":"text/plain","content":"Segue dados gravados com sucesso:"},"$cardContent":{"document":{"id":"c4493c47-1483-4016-ac06-f8d286478b5a","type":"text/plain","content":"Segue dados gravados com sucesso:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:48388"},{"action":{"type":"SendMessage","settings":{"id":"c8abe9a4-c054-42a7-8da4-a9a66e37857b","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"c8abe9a4-c054-42a7-8da4-a9a66e37857b","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:49322"},{"action":{"type":"SendMessage","settings":{"id":"ad412349-50ba-46a1-81bc-19d65f2555be","type":"text/plain","content":"Este é o ticket da sua consulta: {{respInputEvent@id}}, caso queira mudar horário, ou desmarcar é só nos avisar."},"$cardContent":{"document":{"id":"ad412349-50ba-46a1-81bc-19d65f2555be","type":"text/plain","content":"Este é o ticket da sua consulta: {{respInputEvent@id}}, caso queira mudar horário, ou desmarcar é só nos avisar."},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:49323"},{"input":{"bypass":true,"$cardContent":{"document":{"id":"3f3fca53-8d8f-45a7-8f63-147fbb40d24c","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:48071","$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"b000ac9f-27a3-4df5-b0ea-81ee15b0da4d","root":false,"$title":"1.5.1 - Gravado","$position":{"top":"686px","left":"1288px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"bd9dfce5-10f7-4d6a-ac7b-4c477bcd76c6":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"02859fa3-6d71-47c0-887d-1bc61f7bc539","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"02859fa3-6d71-47c0-887d-1bc61f7bc539","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:62043"},{"action":{"type":"SendMessage","settings":{"id":"7bb607b5-5ebc-456c-a9ed-0c61a02f5e61","type":"text/plain","content":"Olá favor me informar o id da consulta marcada:"},"$cardContent":{"document":{"id":"7bb607b5-5ebc-456c-a9ed-0c61a02f5e61","type":"text/plain","content":"Olá favor me informar o id da consulta marcada:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:62044"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"d611a40e-7f5c-4fca-9c46-c3038c47fd99","type":"text/plain","textContent":"Entrada do usuário","content":"idConsulta"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"idConsulta"},"$$hashKey":"object:60762","$invalid":false}],"$conditionOutputs":[{"stateId":"eec00552-fc6d-4ca8-80a8-411513022638","$connId":"con_58","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:63359"}],"$invalid":false,"$$hashKey":"object:63340"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"bd9dfce5-10f7-4d6a-ac7b-4c477bcd76c6","root":false,"$title":"2.0 - Consultar Agendamento","$position":{"top":"350px","left":"1032px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"80d74a22-fda2-49b9-89a4-3a02aaacfa57":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"b0c3e1fa-2afb-4e96-8eca-6944ec5055be","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"b0c3e1fa-2afb-4e96-8eca-6944ec5055be","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:67822"},{"action":{"type":"SendMessage","settings":{"id":"655dbac4-09ee-48ea-bb37-534743feaa46","type":"text/plain","content":"Agora um email:"},"$cardContent":{"document":{"id":"655dbac4-09ee-48ea-bb37-534743feaa46","type":"text/plain","content":"Agora um email:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:67823"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"dff652a5-42af-4bff-8ad1-00ed72f5c5c8","type":"text/plain","textContent":"Entrada do usuário","content":"emailUser"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"emailUser"},"$$hashKey":"object:67506","$invalid":false}],"$conditionOutputs":[{"stateId":"7488f1d8-8427-46c9-a19d-c7171bcc4809","$connId":"con_63","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:69529"}],"$invalid":false,"$$hashKey":"object:69510"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"80d74a22-fda2-49b9-89a4-3a02aaacfa57","root":false,"$title":"1.4 - Solicitar Email","$position":{"top":"727px","left":"776px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"49b5b47e-b19f-454a-b858-25cc5fb52319":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"9eac5417-cb25-41cc-b4eb-0a5553eda653","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"9eac5417-cb25-41cc-b4eb-0a5553eda653","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:75837"},{"action":{"type":"SendMessage","settings":{"id":"40fc7036-8531-4d09-b719-a1dea174d90f","type":"text/plain","content":"Para desmarcar sua consulta você precisa me informar o *Id* da consulta:"},"$cardContent":{"document":{"id":"40fc7036-8531-4d09-b719-a1dea174d90f","type":"text/plain","content":"Para desmarcar sua consulta você precisa me informar o *Id* da consulta:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:75838"},{"action":{"type":"SendMessage","settings":{"id":"6073dc8e-4e0a-437d-94ad-38ffd8c2dee6","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"6073dc8e-4e0a-437d-94ad-38ffd8c2dee6","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:77277"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"ab49d404-027f-470e-9aaa-36ab73c081d8","type":"text/plain","textContent":"Entrada do usuário","content":"excluirConsulta"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"excluirConsulta"},"$$hashKey":"object:70965","$invalid":false}],"$conditionOutputs":[{"stateId":"0d4c495e-04f6-4318-944e-e7016a5b8ded","$connId":"con_68","conditions":[{"source":"input","comparison":"exists","values":[],"$$hashKey":"object:80878"}],"$invalid":false,"$$hashKey":"object:80859"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"49b5b47e-b19f-454a-b858-25cc5fb52319","root":false,"$title":"3.0 - Desmarcar","$position":{"top":"368px","left":"1284px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"0d4c495e-04f6-4318-944e-e7016a5b8ded":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"ad302557-280b-4482-bfc9-36cff26322e3","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"ad302557-280b-4482-bfc9-36cff26322e3","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:78372"},{"action":{"type":"SendMessage","settings":{"id":"dd61de1c-323e-49f8-84ea-8e3536b40474","type":"text/plain","content":"Deseja realmente excluir a consulta:"},"$cardContent":{"document":{"id":"dd61de1c-323e-49f8-84ea-8e3536b40474","type":"text/plain","content":"Deseja realmente excluir a consulta:"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:78373"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"a27bf904-0d8d-4820-8694-6a3ec7570934","type":"text/plain","textContent":"Entrada do usuário","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:77340","$invalid":false}],"$conditionOutputs":[{"stateId":"50730382-4464-42c6-a163-60a9e7a867e7","$connId":"con_73","conditions":[{"source":"input","comparison":"equals","values":["sim"],"$$hashKey":"object:78401"}],"$invalid":false,"$$hashKey":"object:78392"},{"stateId":"2639afb0-a6f6-42b4-9b81-9835eded4d22","$connId":"con_78","conditions":[{"source":"input","comparison":"equals","values":["nao"],"$$hashKey":"object:79659"}],"$invalid":false,"$$hashKey":"object:79651"}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"0d4c495e-04f6-4318-944e-e7016a5b8ded","root":false,"$title":"3.1 - Excluir da Agenda","$position":{"top":"454.118px","left":"1282.92px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"50730382-4464-42c6-a163-60a9e7a867e7":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"b70dbc7e-66e2-4c58-956d-2076e660c7fe","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"b70dbc7e-66e2-4c58-956d-2076e660c7fe","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:78816"},{"action":{"type":"SendMessage","settings":{"id":"4066ebb0-6648-4ecc-942f-a6a3977d9953","type":"text/plain","content":"Sua consulta: {{excluirConsulta}} foi excluída com sucesso, verifique seu email."},"$cardContent":{"document":{"id":"4066ebb0-6648-4ecc-942f-a6a3977d9953","type":"text/plain","content":"Sua consulta: {{excluirConsulta}} foi excluída com sucesso, verifique seu email."},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:78817"},{"input":{"bypass":true,"$cardContent":{"document":{"id":"b902293d-66f1-4d3d-b43a-da61bafa3242","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:78497","$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[{"type":"ProcessHttp","$title":"ExcluirConsulta","$invalid":false,"settings":{"headers":{"Authorization":"Bearer {{oauth@access_token}}"},"method":"DELETE","body":"{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\"\n}\n            ","uri":"https://www.googleapis.com/calendar/v3/calendars/{{config.agendaLab}}/events/{{excluirConsulta}}?sendUpdates=all","responseBodyVariable":"consultaExcluida"},"conditions":[]}],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"50730382-4464-42c6-a163-60a9e7a867e7","root":false,"$title":"3.1.1 - Confirmar exclusão","$position":{"top":"412px","left":"1507px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"2639afb0-a6f6-42b4-9b81-9835eded4d22":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"3a874b01-acd6-4348-8c13-94cb84c67940","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"3a874b01-acd6-4348-8c13-94cb84c67940","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:79216"},{"action":{"type":"SendMessage","settings":{"id":"fd5586fb-04c8-4d3e-88ba-4c6da8fb73df","type":"text/plain","content":"Você deseja mais alguma coisa?"},"$cardContent":{"document":{"id":"fd5586fb-04c8-4d3e-88ba-4c6da8fb73df","type":"text/plain","content":"Você deseja mais alguma coisa?"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:79217"},{"input":{"bypass":true,"$cardContent":{"document":{"id":"ab4f1850-16c9-4aa4-9508-71453058ae74","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$$hashKey":"object:78900","$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"2639afb0-a6f6-42b4-9b81-9835eded4d22","root":false,"$title":"3.1.2 - Não excluida","$position":{"top":"515.022px","left":"1508px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"c3ee236f-b83f-48ae-ac89-db804345a9ad":{"$contentActions":[{"action":{"type":"SendMessage","settings":{"id":"28508aa1-45ea-4a07-9f11-dd59f1dd7837","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"28508aa1-45ea-4a07-9f11-dd59f1dd7837","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:16436"},{"action":{"type":"SendMessage","settings":{"id":"3c95546b-5a9d-442c-99bf-35aeb062c513","type":"text/plain","content":"{{resp}}"},"$cardContent":{"document":{"id":"3c95546b-5a9d-442c-99bf-35aeb062c513","type":"text/plain","content":"{{resp}}"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:16437"},{"action":{"type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000000","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000000","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left","editing":false}},"$invalid":false,"$$hashKey":"object:16438"},{"action":{"type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000001","type":"text/plain","content":"Olá! {{contact.name}}!\nSeja bem-vindo(a)!"},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000001","type":"text/plain","content":"Olá! {{contact.name}}!\nSeja bem-vindo(a)!"},"editable":true,"deletable":true,"position":"left","editing":false}},"$invalid":false,"$$hashKey":"object:16439"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"be51ea56-c5d4-4255-8741-140c24dfb7a2","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false,"$$hashKey":"object:16442"}],"$conditionOutputs":[],"$enteringCustomActions":[{"type":"TrackEvent","$title":"boasvindas","$invalid":false,"settings":{"extras":{"userid":"{{contact.identity}}"},"category":"boasvindas","action":"cont"},"conditions":[]},{"type":"ProcessHttp","$title":"Requisição HTTP","$invalid":false,"settings":{"headers":{"Authorization":"Key Z29vZ2xlY2FsZW5kYXJhcGk6T0l3MlBxeDQ5NjdUSGJsb3d2NDA="},"method":"POST","body":"{\n    \"id\": \"5\",\n    \"to\": \"postmaster@analytics.msging.net\",\n    \"method\": \"get\",\n    \"uri\": \"/event-track/boasvindas/cont\"\n}","uri":"https://msging.net/commands","responseBodyVariable":"itemCont"},"conditions":[]},{"type":"ExecuteScript","$title":"Executar script","$invalid":false,"settings":{"function":"run","source":"function run(inputVariable1, inputVariable2) {\n\n    var newTxt = JSON.parse(inputVariable1);\n    var newItems = [newTxt.resource.items]\n    var extra = []\n    var usersIds = ''\n\n    for (var i = 0; i < newItems[0].length; i++) {\n        extra[i] = [newItems[0][i].extras.userid];\n        usersIds += '\\n' + extra[i];\n    }\n\n    return usersIds;\n}","inputVariables":["itemCont"],"outputVariable":"resp"},"conditions":[]}],"$leavingCustomActions":[],"$inputSuggestions":[],"$tags":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"id":"c3ee236f-b83f-48ae-ac89-db804345a9ad","$position":{"top":"79px","left":"2759px"},"$title":"Boas vindas [Duplicate]","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false}}
+{
+    "onboarding": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "7c8e49d8-8272-456c-8bde-24308034a8a0",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": false,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "welcome",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$connId": "con_3",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "onboarding",
+        "root": true,
+        "$position": {
+            "top": "133px",
+            "left": "1032px"
+        },
+        "$title": "Início",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "fallback": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "844844cd-f6a3-4065-ab4a-2aae1ec4b7ce",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:13460"
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "error",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ],
+                        "$$hashKey": "object:13505"
+                    }
+                ],
+                "$connId": "con_8",
+                "$invalid": false,
+                "$$hashKey": "object:13486"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "id": "fallback",
+        "$position": {
+            "top": "166px",
+            "left": "1424px"
+        },
+        "$title": "Exceções",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "welcome": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "8567f8b6-60f7-42cd-b954-519e1c601224",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "8567f8b6-60f7-42cd-b954-519e1c601224",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:6646"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000001",
+                        "type": "text/plain",
+                        "content": "Olá! {{contact.name}}!\nSeja bem-vindo(a)!"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000001",
+                            "type": "text/plain",
+                            "content": "Olá! {{contact.name}}!\nSeja bem-vindo(a)!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$$hashKey": "object:2559",
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "c5d0d2fa-412b-40cb-9f72-b803d82caeb7",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "c5d0d2fa-412b-40cb-9f72-b803d82caeb7",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:22161"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f9f6b4c4-15d5-42b1-bd5e-03b69b00e580",
+                        "type": "text/plain",
+                        "content": "1 - Agendamento de consulta\n2 - Verificar consulta\n3 - Desmarcar consulta"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f9f6b4c4-15d5-42b1-bd5e-03b69b00e580",
+                            "type": "text/plain",
+                            "content": "1 - Agendamento de consulta\n2 - Verificar consulta\n3 - Desmarcar consulta"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:22162"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "be51ea56-c5d4-4255-8741-140c24dfb7a2",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:2560",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "3cf2a131-ba34-48e4-b33c-3774a58ca75e",
+                "$connId": "con_13",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "1"
+                        ],
+                        "$$hashKey": "object:7902"
+                    }
+                ],
+                "$$hashKey": "object:7883",
+                "$invalid": false
+            },
+            {
+                "stateId": "bd9dfce5-10f7-4d6a-ac7b-4c477bcd76c6",
+                "$connId": "con_18",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "2"
+                        ],
+                        "$$hashKey": "object:22668"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:22660"
+            },
+            {
+                "stateId": "49b5b47e-b19f-454a-b858-25cc5fb52319",
+                "$connId": "con_23",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "3"
+                        ],
+                        "$$hashKey": "object:76455"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:76447"
+            }
+        ],
+        "$enteringCustomActions": [
+            {
+                "type": "ProcessHttp",
+                "$title": "OAuth",
+                "$invalid": true,
+                "settings": {
+                    "headers": {},
+                    "method": "POST",
+                    "body": "",
+                    "uri": "https://accounts.google.com/o/oauth2/token",
+                    "responseBodyVariable": "oauth"
+                },
+                "conditions": [],
+                "$validationError": {}
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "welcome",
+        "$position": {
+            "top": "245px",
+            "left": "1032px"
+        },
+        "$title": "Boas vindas",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": true,
+        "$invalid": true,
+        "$validationError": {}
+    },
+    "error": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "fca8d708-9acf-4a1c-9926-c988d8ac327b",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "fca8d708-9acf-4a1c-9926-c988d8ac327b",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:39800"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "d0e8b981-d96e-43e3-9505-395be30917e4",
+                        "type": "text/plain",
+                        "content": "Não entendi"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "d0e8b981-d96e-43e3-9505-395be30917e4",
+                            "type": "text/plain",
+                            "content": "Não entendi"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:39801"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "5c589021-057f-4c0d-9d60-f086feb9010b",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:1428",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "id": "error",
+        "$position": {
+            "top": "166px",
+            "left": "1659px"
+        },
+        "$title": "Erro padrão",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "eec00552-fc6d-4ca8-80a8-411513022638": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "a9ab9b48-ecac-421a-b905-93ed89e73311",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "a9ab9b48-ecac-421a-b905-93ed89e73311",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1363"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "2e455d36-6519-40f6-b6c8-c149e3a0aef2",
+                        "type": "text/plain",
+                        "content": "{{respEvent@status}}\n{{respEvent@summary}}\n{{respEvent@description}}\n{{respEvent@location}}\n{{respEvent@start}}\n{{respEvent@htmlLink}}"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "2e455d36-6519-40f6-b6c8-c149e3a0aef2",
+                            "type": "text/plain",
+                            "content": "{{respEvent@status}}\n{{respEvent@summary}}\n{{respEvent@description}}\n{{respEvent@location}}\n{{respEvent@start}}\n{{respEvent@htmlLink}}"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1364"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "894969dc-11d0-4625-be3b-635f3db99134",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:1044",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [
+            {
+                "type": "ProcessHttp",
+                "$title": "getEvents",
+                "$invalid": false,
+                "settings": {
+                    "headers": {
+                        "Authorization": "Bearer {{oauth@access_token}}"
+                    },
+                    "method": "GET",
+                    "uri": "https://www.googleapis.com/calendar/v3/calendars/{{config.agendaLab}}/events/{{idConsulta}}",
+                    "responseBodyVariable": "respEvent"
+                },
+                "conditions": []
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "eec00552-fc6d-4ca8-80a8-411513022638",
+        "root": false,
+        "$title": "2.1 - Buscar Agendamento",
+        "$position": {
+            "top": "460px",
+            "left": "1032px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "7488f1d8-8427-46c9-a19d-c7171bcc4809": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "50162d02-f402-4c73-bd9e-7052e3f2abb9",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "50162d02-f402-4c73-bd9e-7052e3f2abb9",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:47799"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "82c23c30-b39a-4796-9a96-1e47d96955aa",
+                        "type": "text/plain",
+                        "content": "Deseja gravar a consulta?\nAssunto: {{nomeEvent}}\nDescrição: {{description}}\nData: {{dateEvent}} H {{horaUser}}\n1 - *SIM*\n2 - NÃO"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "82c23c30-b39a-4796-9a96-1e47d96955aa",
+                            "type": "text/plain",
+                            "content": "Deseja gravar a consulta?\nAssunto: {{nomeEvent}}\nDescrição: {{description}}\nData: {{dateEvent}} H {{horaUser}}\n1 - *SIM*\n2 - NÃO"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:47800"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "b9005014-2c70-4e42-a904-397fd43a8a85",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:21415",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "b000ac9f-27a3-4df5-b0ea-81ee15b0da4d",
+                "$connId": "con_28",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "1",
+                            "sim"
+                        ],
+                        "$$hashKey": "object:50126"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:50117"
+            },
+            {
+                "stateId": "51732230-532e-429e-b118-f8096ec5d27b",
+                "$connId": "con_33",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "nao",
+                            "2",
+                            "não"
+                        ],
+                        "$$hashKey": "object:50172"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:50164"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [
+            {
+                "type": "ExecuteScript",
+                "$title": "FormatarData",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "function run(inputVariable1, inputVariable2) {\n\n    var date = inputVariable1;\n    var newdate = date.split(\"/\").reverse().join(\"-\");\n    return newdate;\n    \n}",
+                    "inputVariables": [
+                        "dateEvent"
+                    ],
+                    "outputVariable": "dateEventFormated"
+                },
+                "conditions": [
+                    {
+                        "$$hashKey": "object:57773",
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "1",
+                            "sim"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "ExecuteScript",
+                "$title": "HoraFinalConsulta",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "function run(inputVariable1, inputVariable2) {\n\n    var inputSplit = [inputVariable1.split(\":\")]\n    var hora = (inputSplit[0][0] * 1) + 1;\n\n    if (hora < 10) {\n        hora = \"0\" + hora;\n    }\n\n    var newHora = hora + \":\" + inputSplit[0][1];\n\n    if (newHora > '23:59') {\n        newHora = '23:59'\n    }\n\n    return newHora;\n}",
+                    "inputVariables": [
+                        "horaUser"
+                    ],
+                    "outputVariable": "horaUserEnd"
+                },
+                "conditions": [
+                    {
+                        "$$hashKey": "object:53629",
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "1",
+                            "sim"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "ProcessHttp",
+                "$title": "GravarEvento",
+                "$invalid": false,
+                "settings": {
+                    "headers": {
+                        "Authorization": "Bearer {{oauth@access_token}}"
+                    },
+                    "method": "POST",
+                    "body": "{\n    \"summary\": \"{{nomeEvent}}\",\n    \"location\": \"Laboratório Sul\",\n    \"description\": \"{{description}}\",\n    \"start\": {\n        \"dateTime\": \"{{dateEventFormated}}T{{horaUser}}:00-03:00\",\n        \"timeZone\": \"America/Sao_Paulo\"\n    },\n    \"attendees\": [\n        {\n            \"email\": \"{{emailUser}}\"\n        }\n    ],\n    \"end\": {\n        \"dateTime\": \"{{dateEventFormated}}T{{horaUserEnd}}:00-03:00\",\n        \"timeZone\": \"America/Sao_Paulo\"\n    }\n}",
+                    "uri": "https://www.googleapis.com/calendar/v3/calendars/{{config.agendaLab}}/events?sendUpdates=all",
+                    "responseBodyVariable": "respInputEvent"
+                },
+                "conditions": [
+                    {
+                        "$$hashKey": "object:47953",
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "1",
+                            "SIM"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "7488f1d8-8427-46c9-a19d-c7171bcc4809",
+        "root": false,
+        "$title": "1.5 - Guardar Evento",
+        "$position": {
+            "top": "728px",
+            "left": "1036px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "87fa8c8d-2b01-4968-9d58-a5856b394d73": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "8e5d1dfb-400f-4528-816c-e244b3a0b07e",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "8e5d1dfb-400f-4528-816c-e244b3a0b07e",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26889"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "12216010-ee71-44ae-8519-2ad7268cf1d6",
+                        "type": "text/plain",
+                        "content": "Agora informe o dia:\n(ex.: 31/12/2018)"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "12216010-ee71-44ae-8519-2ad7268cf1d6",
+                            "type": "text/plain",
+                            "content": "Agora informe o dia:\n(ex.: 31/12/2018)"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26890"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "06defaae-ec24-4096-9ec7-6cdac2c85a72",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "dateEvent"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "dateEvent",
+                    "validation": {
+                        "rule": "regex",
+                        "error": "Informe uma data valida",
+                        "regex": "^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26573"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "83a603f9-3178-4976-a200-8d940b72d115",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        },
+                        "metadata": {
+                            "#stateName": "{{state.name}}",
+                            "#stateId": "{{state.id}}",
+                            "#messageId": "{{input.message@id}}"
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "83a603f9-3178-4976-a200-8d940b72d115",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            },
+                            "metadata": {
+                                "#stateName": "{{state.name}}",
+                                "#stateId": "{{state.id}}",
+                                "#messageId": "{{input.message@id}}"
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:45858"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "30a28ee9-c6f1-437a-af2e-f50113ec2b98",
+                        "type": "text/plain",
+                        "content": "TEST: {{dateEvent}}",
+                        "metadata": {
+                            "#stateName": "{{state.name}}",
+                            "#stateId": "{{state.id}}",
+                            "#messageId": "{{input.message@id}}"
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "30a28ee9-c6f1-437a-af2e-f50113ec2b98",
+                            "type": "text/plain",
+                            "content": "TEST: {{dateEvent}}"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:45859"
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "d72216f0-1861-4c8f-9697-5923a9827898",
+                "$connId": "con_38",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:34650"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:34631"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "87fa8c8d-2b01-4968-9d58-a5856b394d73",
+        "root": false,
+        "$title": "1.2 - Solicita Data",
+        "$position": {
+            "top": "558.844px",
+            "left": "775px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "3cf2a131-ba34-48e4-b33c-3774a58ca75e": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "c548a0e0-569e-4e38-8de0-93a760f30b32",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "c548a0e0-569e-4e38-8de0-93a760f30b32",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:39404"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "d1d5d70f-b20c-40d8-9585-662128cebeac",
+                        "type": "text/plain",
+                        "content": "Vamos agora solicitar algumas informações importantes, se atende as orientações:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "d1d5d70f-b20c-40d8-9585-662128cebeac",
+                            "type": "text/plain",
+                            "content": "Vamos agora solicitar algumas informações importantes, se atende as orientações:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:39405"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "a0ec434b-c0bb-4199-99e1-991162c09e72",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "a0ec434b-c0bb-4199-99e1-991162c09e72",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26019"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "0becfc5f-0523-4bdd-83ef-3b3686f7978f",
+                        "type": "text/plain",
+                        "content": "##IMPORTANTE##\nAs informações solicitadas deverá ser enviada em 1 linha apenas"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "0becfc5f-0523-4bdd-83ef-3b3686f7978f",
+                            "type": "text/plain",
+                            "content": "##IMPORTANTE##\nAs informações solicitadas deverá ser enviada em 1 linha apenas"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26494"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "031d6704-d827-430f-9b53-4d1519150875",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "031d6704-d827-430f-9b53-4d1519150875",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26493"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "694dfca1-ce97-41c4-955a-027514c36532",
+                        "type": "text/plain",
+                        "content": "Me informe seu nome e o número da sua carteirinha:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "694dfca1-ce97-41c4-955a-027514c36532",
+                            "type": "text/plain",
+                            "content": "Me informe seu nome e o número da sua carteirinha:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:26020"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "08931b1f-9f76-4fbc-9ba0-92f5dd07c894",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "nomeEvent"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "nomeEvent",
+                    "validation": {
+                        "rule": "text",
+                        "error": "Informe seus dados corretos"
+                    }
+                },
+                "$$hashKey": "object:25588",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "ba5631b2-a05f-4d1e-97ce-6f9e8ac53646",
+                "$connId": "con_43",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:33816"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:33797"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "3cf2a131-ba34-48e4-b33c-3774a58ca75e",
+        "root": false,
+        "$title": "1.0 - Solicita nome",
+        "$position": {
+            "top": "368px",
+            "left": "775px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "d72216f0-1861-4c8f-9697-5923a9827898": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "6977fbca-46f1-442d-b0aa-8aae2e5330bd",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "6977fbca-46f1-442d-b0aa-8aae2e5330bd",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:27492"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "8a8cda28-ac4c-44aa-93be-b599d5e205f0",
+                        "type": "text/plain",
+                        "content": "E por último me informe a hora:\n(ex.: 16:30)"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "8a8cda28-ac4c-44aa-93be-b599d5e205f0",
+                            "type": "text/plain",
+                            "content": "E por último me informe a hora:\n(ex.: 16:30)"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:27493"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "f49068e6-309b-44e7-83bb-9ad22384eaa4",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "horaUser"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "horaUser",
+                    "validation": {
+                        "rule": "regex",
+                        "error": "Informe um horário valido",
+                        "regex": "^(0[0-9]|1[0-9]|2[0-3]|[0-9]):[0-5][0-9]$"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:27067"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "34a57bc7-d4c7-475d-b3b7-765302a03607",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        },
+                        "metadata": {
+                            "#stateName": "{{state.name}}",
+                            "#stateId": "{{state.id}}",
+                            "#messageId": "{{input.message@id}}"
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "34a57bc7-d4c7-475d-b3b7-765302a03607",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            },
+                            "metadata": {
+                                "#stateName": "{{state.name}}",
+                                "#stateId": "{{state.id}}",
+                                "#messageId": "{{input.message@id}}"
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:46254"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "8a9bbc29-043f-4606-8c06-3f2177be7028",
+                        "type": "text/plain",
+                        "content": "TEST: {{horaUser}}",
+                        "metadata": {
+                            "#stateName": "{{state.name}}",
+                            "#stateId": "{{state.id}}",
+                            "#messageId": "{{input.message@id}}"
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "8a9bbc29-043f-4606-8c06-3f2177be7028",
+                            "type": "text/plain",
+                            "content": "TEST: {{horaUser}}"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:46255"
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "80d74a22-fda2-49b9-89a4-3a02aaacfa57",
+                "$connId": "con_48",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:52103"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:52084"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "d72216f0-1861-4c8f-9697-5923a9827898",
+        "root": false,
+        "$title": "1.3 - Solicita Horário",
+        "$position": {
+            "top": "642.468px",
+            "left": "775px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "ba5631b2-a05f-4d1e-97ce-6f9e8ac53646": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f5fef304-a4a2-4705-ba18-dc87b71ab5f4",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f5fef304-a4a2-4705-ba18-dc87b71ab5f4",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:43380"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "07aa99a7-d450-4e31-abd6-56a21952a4c7",
+                        "type": "text/plain",
+                        "content": "Agora me informe o assunto desta consulta:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "07aa99a7-d450-4e31-abd6-56a21952a4c7",
+                            "type": "text/plain",
+                            "content": "Agora me informe o assunto desta consulta:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:43381"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "2150d3e8-6a71-47d2-826e-e7685bfe7c92",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "description"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "validation": {
+                        "rule": "text",
+                        "error": "Me informe os dados corretamente"
+                    },
+                    "variable": "description"
+                },
+                "$$hashKey": "object:40965",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "87fa8c8d-2b01-4968-9d58-a5856b394d73",
+                "$connId": "con_53",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:42419"
+                    }
+                ],
+                "$$hashKey": "object:42400",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "ba5631b2-a05f-4d1e-97ce-6f9e8ac53646",
+        "root": false,
+        "$title": "1.1 - Solicita Descrição",
+        "$position": {
+            "top": "455.221px",
+            "left": "775px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "51732230-532e-429e-b118-f8096ec5d27b": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f91c4447-89b5-478f-bba1-8c1f741c8680",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f91c4447-89b5-478f-bba1-8c1f741c8680",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:49701"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f354e454-ce3d-494d-95b6-51301a3e4649",
+                        "type": "text/plain",
+                        "content": "Qualquer coisa é nos contator novamente então, obrigado!"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f354e454-ce3d-494d-95b6-51301a3e4649",
+                            "type": "text/plain",
+                            "content": "Qualquer coisa é nos contator novamente então, obrigado!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:49702"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a4879f3a-ef5d-40f2-8d97-43247f732976",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:49385",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "51732230-532e-429e-b118-f8096ec5d27b",
+        "root": false,
+        "$title": "1.5.2 - Desistência",
+        "$position": {
+            "top": "770px",
+            "left": "1288.85px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "b000ac9f-27a3-4df5-b0ea-81ee15b0da4d": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "3feef6d8-f576-47b1-bebc-f83b02ed9aaa",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "3feef6d8-f576-47b1-bebc-f83b02ed9aaa",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:48387"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "c4493c47-1483-4016-ac06-f8d286478b5a",
+                        "type": "text/plain",
+                        "content": "Segue dados gravados com sucesso:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "c4493c47-1483-4016-ac06-f8d286478b5a",
+                            "type": "text/plain",
+                            "content": "Segue dados gravados com sucesso:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:48388"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "c8abe9a4-c054-42a7-8da4-a9a66e37857b",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "c8abe9a4-c054-42a7-8da4-a9a66e37857b",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:49322"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "ad412349-50ba-46a1-81bc-19d65f2555be",
+                        "type": "text/plain",
+                        "content": "Este é o ticket da sua consulta: {{respInputEvent@id}}, caso queira mudar horário, ou desmarcar é só nos avisar."
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "ad412349-50ba-46a1-81bc-19d65f2555be",
+                            "type": "text/plain",
+                            "content": "Este é o ticket da sua consulta: {{respInputEvent@id}}, caso queira mudar horário, ou desmarcar é só nos avisar."
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:49323"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "3f3fca53-8d8f-45a7-8f63-147fbb40d24c",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:48071",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "b000ac9f-27a3-4df5-b0ea-81ee15b0da4d",
+        "root": false,
+        "$title": "1.5.1 - Gravado",
+        "$position": {
+            "top": "686px",
+            "left": "1288px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "bd9dfce5-10f7-4d6a-ac7b-4c477bcd76c6": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "02859fa3-6d71-47c0-887d-1bc61f7bc539",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "02859fa3-6d71-47c0-887d-1bc61f7bc539",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:62043"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "7bb607b5-5ebc-456c-a9ed-0c61a02f5e61",
+                        "type": "text/plain",
+                        "content": "Olá favor me informar o id da consulta marcada:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "7bb607b5-5ebc-456c-a9ed-0c61a02f5e61",
+                            "type": "text/plain",
+                            "content": "Olá favor me informar o id da consulta marcada:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:62044"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "d611a40e-7f5c-4fca-9c46-c3038c47fd99",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "idConsulta"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "idConsulta"
+                },
+                "$$hashKey": "object:60762",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "eec00552-fc6d-4ca8-80a8-411513022638",
+                "$connId": "con_58",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:63359"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:63340"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "bd9dfce5-10f7-4d6a-ac7b-4c477bcd76c6",
+        "root": false,
+        "$title": "2.0 - Consultar Agendamento",
+        "$position": {
+            "top": "350px",
+            "left": "1032px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "80d74a22-fda2-49b9-89a4-3a02aaacfa57": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "b0c3e1fa-2afb-4e96-8eca-6944ec5055be",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "b0c3e1fa-2afb-4e96-8eca-6944ec5055be",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:67822"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "655dbac4-09ee-48ea-bb37-534743feaa46",
+                        "type": "text/plain",
+                        "content": "Agora um email:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "655dbac4-09ee-48ea-bb37-534743feaa46",
+                            "type": "text/plain",
+                            "content": "Agora um email:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:67823"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "dff652a5-42af-4bff-8ad1-00ed72f5c5c8",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "emailUser"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "emailUser"
+                },
+                "$$hashKey": "object:67506",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "7488f1d8-8427-46c9-a19d-c7171bcc4809",
+                "$connId": "con_63",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:69529"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:69510"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "80d74a22-fda2-49b9-89a4-3a02aaacfa57",
+        "root": false,
+        "$title": "1.4 - Solicitar Email",
+        "$position": {
+            "top": "727px",
+            "left": "776px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "49b5b47e-b19f-454a-b858-25cc5fb52319": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "9eac5417-cb25-41cc-b4eb-0a5553eda653",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "9eac5417-cb25-41cc-b4eb-0a5553eda653",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:75837"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "40fc7036-8531-4d09-b719-a1dea174d90f",
+                        "type": "text/plain",
+                        "content": "Para desmarcar sua consulta você precisa me informar o *Id* da consulta:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "40fc7036-8531-4d09-b719-a1dea174d90f",
+                            "type": "text/plain",
+                            "content": "Para desmarcar sua consulta você precisa me informar o *Id* da consulta:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:75838"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "6073dc8e-4e0a-437d-94ad-38ffd8c2dee6",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "6073dc8e-4e0a-437d-94ad-38ffd8c2dee6",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:77277"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "ab49d404-027f-470e-9aaa-36ab73c081d8",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "excluirConsulta"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "excluirConsulta"
+                },
+                "$$hashKey": "object:70965",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "0d4c495e-04f6-4318-944e-e7016a5b8ded",
+                "$connId": "con_68",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:80878"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:80859"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "49b5b47e-b19f-454a-b858-25cc5fb52319",
+        "root": false,
+        "$title": "3.0 - Desmarcar",
+        "$position": {
+            "top": "368px",
+            "left": "1284px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "0d4c495e-04f6-4318-944e-e7016a5b8ded": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "ad302557-280b-4482-bfc9-36cff26322e3",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "ad302557-280b-4482-bfc9-36cff26322e3",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:78372"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "dd61de1c-323e-49f8-84ea-8e3536b40474",
+                        "type": "text/plain",
+                        "content": "Deseja realmente excluir a consulta:"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "dd61de1c-323e-49f8-84ea-8e3536b40474",
+                            "type": "text/plain",
+                            "content": "Deseja realmente excluir a consulta:"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:78373"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a27bf904-0d8d-4820-8694-6a3ec7570934",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:77340",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "50730382-4464-42c6-a163-60a9e7a867e7",
+                "$connId": "con_73",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "sim"
+                        ],
+                        "$$hashKey": "object:78401"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:78392"
+            },
+            {
+                "stateId": "2639afb0-a6f6-42b4-9b81-9835eded4d22",
+                "$connId": "con_78",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "equals",
+                        "values": [
+                            "nao"
+                        ],
+                        "$$hashKey": "object:79659"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:79651"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "0d4c495e-04f6-4318-944e-e7016a5b8ded",
+        "root": false,
+        "$title": "3.1 - Excluir da Agenda",
+        "$position": {
+            "top": "454.118px",
+            "left": "1282.92px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "50730382-4464-42c6-a163-60a9e7a867e7": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "b70dbc7e-66e2-4c58-956d-2076e660c7fe",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "b70dbc7e-66e2-4c58-956d-2076e660c7fe",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:78816"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "4066ebb0-6648-4ecc-942f-a6a3977d9953",
+                        "type": "text/plain",
+                        "content": "Sua consulta: {{excluirConsulta}} foi excluída com sucesso, verifique seu email."
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "4066ebb0-6648-4ecc-942f-a6a3977d9953",
+                            "type": "text/plain",
+                            "content": "Sua consulta: {{excluirConsulta}} foi excluída com sucesso, verifique seu email."
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:78817"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "b902293d-66f1-4d3d-b43a-da61bafa3242",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:78497",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [
+            {
+                "type": "ProcessHttp",
+                "$title": "ExcluirConsulta",
+                "$invalid": false,
+                "settings": {
+                    "headers": {
+                        "Authorization": "Bearer {{oauth@access_token}}"
+                    },
+                    "method": "DELETE",
+                    "body": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\"\n}\n            ",
+                    "uri": "https://www.googleapis.com/calendar/v3/calendars/{{config.agendaLab}}/events/{{excluirConsulta}}?sendUpdates=all",
+                    "responseBodyVariable": "consultaExcluida"
+                },
+                "conditions": []
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "50730382-4464-42c6-a163-60a9e7a867e7",
+        "root": false,
+        "$title": "3.1.1 - Confirmar exclusão",
+        "$position": {
+            "top": "412px",
+            "left": "1507px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "2639afb0-a6f6-42b4-9b81-9835eded4d22": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "3a874b01-acd6-4348-8c13-94cb84c67940",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "3a874b01-acd6-4348-8c13-94cb84c67940",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:79216"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "fd5586fb-04c8-4d3e-88ba-4c6da8fb73df",
+                        "type": "text/plain",
+                        "content": "Você deseja mais alguma coisa?"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "fd5586fb-04c8-4d3e-88ba-4c6da8fb73df",
+                            "type": "text/plain",
+                            "content": "Você deseja mais alguma coisa?"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:79217"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "ab4f1850-16c9-4aa4-9508-71453058ae74",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$$hashKey": "object:78900",
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "2639afb0-a6f6-42b4-9b81-9835eded4d22",
+        "root": false,
+        "$title": "3.1.2 - Não excluida",
+        "$position": {
+            "top": "515.022px",
+            "left": "1508px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "c3ee236f-b83f-48ae-ac89-db804345a9ad": {
+        "$contentActions": [
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "28508aa1-45ea-4a07-9f11-dd59f1dd7837",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "28508aa1-45ea-4a07-9f11-dd59f1dd7837",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:16436"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "3c95546b-5a9d-442c-99bf-35aeb062c513",
+                        "type": "text/plain",
+                        "content": "{{resp}}"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "3c95546b-5a9d-442c-99bf-35aeb062c513",
+                            "type": "text/plain",
+                            "content": "{{resp}}"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:16437"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000000",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000000",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:16438"
+            },
+            {
+                "action": {
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000001",
+                        "type": "text/plain",
+                        "content": "Olá! {{contact.name}}!\nSeja bem-vindo(a)!"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000001",
+                            "type": "text/plain",
+                            "content": "Olá! {{contact.name}}!\nSeja bem-vindo(a)!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:16439"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "be51ea56-c5d4-4255-8741-140c24dfb7a2",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:16442"
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [
+            {
+                "type": "TrackEvent",
+                "$title": "boasvindas",
+                "$invalid": false,
+                "settings": {
+                    "extras": {
+                        "userid": "{{contact.identity}}"
+                    },
+                    "category": "boasvindas",
+                    "action": "cont"
+                },
+                "conditions": []
+            },
+            {
+                "type": "ProcessHttp",
+                "$title": "Requisição HTTP",
+                "$invalid": false,
+                "settings": {
+                    "headers": {
+                        "Authorization": "Key Z29vZ2xlY2FsZW5kYXJhcGk6T0l3MlBxeDQ5NjdUSGJsb3d2NDA="
+                    },
+                    "method": "POST",
+                    "body": "{\n    \"id\": \"5\",\n    \"to\": \"postmaster@analytics.msging.net\",\n    \"method\": \"get\",\n    \"uri\": \"/event-track/boasvindas/cont\"\n}",
+                    "uri": "https://msging.net/commands",
+                    "responseBodyVariable": "itemCont"
+                },
+                "conditions": []
+            },
+            {
+                "type": "ExecuteScript",
+                "$title": "Executar script",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "function run(inputVariable1, inputVariable2) {\n\n    var newTxt = JSON.parse(inputVariable1);\n    var newItems = [newTxt.resource.items]\n    var extra = []\n    var usersIds = ''\n\n    for (var i = 0; i < newItems[0].length; i++) {\n        extra[i] = [newItems[0][i].extras.userid];\n        usersIds += '\\n' + extra[i];\n    }\n\n    return usersIds;\n}",
+                    "inputVariables": [
+                        "itemCont"
+                    ],
+                    "outputVariable": "resp"
+                },
+                "conditions": []
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$tags": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "id": "c3ee236f-b83f-48ae-ac89-db804345a9ad",
+        "$position": {
+            "top": "79px",
+            "left": "2759px"
+        },
+        "$title": "Boas vindas [Duplicate]",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    }
+}
